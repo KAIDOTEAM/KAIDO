@@ -1040,12 +1040,12 @@ end
 if text == 'تحديث السورس ⌯' and DevKAIDOW(msg) then 
 os.execute('rm -rf KAIDO.lua')
 os.execute('wget https://raw.githubusercontent.com/KAIDOTEAM/KAIDO/main/KAIDO.lua')
-send(msg.chat_id_, msg.id_,' ⌯︙ تم تحديث السورس \n ⌯︙ لديك اخر اصدار لسورس بويكا\n ⌯︙ الاصدار » { 1.3v}')
+send(msg.chat_id_, msg.id_,' ⌯︙ تم تحديث السورس \n ⌯︙ لديك اخر اصدار لسورس كايدو\n ⌯︙ الاصدار » { 1.3v}')
 dofile('KAIDO.lua')  
 end
 if text == 'الاصدار ⌯' and DevKAIDOW(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' ⌯︙ اصدار سورس بويكا \n ⌯︙ الاصدار »{ 1.3v}')
+send(msg.chat_id_, msg.id_,' ⌯︙ اصدار سورس كايدو \n ⌯︙ الاصدار »{ 1.3v}')
 end
 if text == 'قناه تحديثات البوت ⌯' and DevKAIDOW(msg) then 
 database:del(bot_id..'Srt:Bot') 
@@ -2291,7 +2291,7 @@ return false
 end
 os.execute('rm -rf KAIDO.lua')
 os.execute('wget https://raw.githubusercontent.com/KAIDOTEAM/KAIDO/main/KAIDO.lua')
-send(msg.chat_id_, msg.id_,' ⌯︙ تم تحديث السورس \n ⌯︙ لديك اخر اصدار لسورس بويكا\n ⌯︙ الاصدار » { 1.3v}')
+send(msg.chat_id_, msg.id_,' ⌯︙ تم تحديث السورس \n ⌯︙ لديك اخر اصدار لسورس كايدو\n ⌯︙ الاصدار » { 1.3v}')
 dofile('KAIDO.lua')  
 end
 
@@ -8628,8 +8628,8 @@ end
 return false
 end
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'بويكا').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+if text == ""..(database:get(bot_id..'Name:Bot') or 'كايدو').."" then  
+Namebot = (database:get(bot_id..'Name:Bot') or 'كايدو')
 local KAIDO_Msg = {
 'عمغي 🥺💕.',
 'هاا شتريد كافي ☹️.',
@@ -9229,7 +9229,7 @@ end
 end
 end
 -------------------------------
-if text == ""..(database:get(bot_id..'Name:Bot') or 'بويكا').." غادر" or text == 'غادر' then  
+if text == ""..(database:get(bot_id..'Name:Bot') or 'كايدو').." غادر" or text == 'غادر' then  
 if Sudo(msg) and not database:get(bot_id..'Left:Bot'..msg.chat_id_)  then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
 send(msg.chat_id_, msg.id_,'⌯︙ تم مغادرة المجموعه') 
@@ -9238,7 +9238,7 @@ end
 return false  
 end
 if text == 'بوت' then
-Namebot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+Namebot = (database:get(bot_id..'Name:Bot') or 'كايدو')
 send(msg.chat_id_, msg.id_,'اسمي ['..Namebot..'] ')
 end
 if text == 'الاحصائيات' then
@@ -11924,7 +11924,7 @@ if (text and text == "تفعيل اوامر التحشيش") then
 send(msg.chat_id_, msg.id_, '  ⌯︙ تم تفعيل اوامر التحشيش')
 database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
 end
-local Name_Bot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+local Name_Bot = (database:get(bot_id..'Name:Bot') or 'كايدو')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
